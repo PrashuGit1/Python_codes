@@ -27,7 +27,7 @@ print(li)
 
 print(li.index(3))
 
-#insert
+#insert method
 
 li.insert(3, 10)
 print(li)
@@ -50,3 +50,5 @@ print(li)
 print(li[1:7])
 print(li[1:7:2])
 print(li[-1:7:-1])
+
+print(li[1:9])
