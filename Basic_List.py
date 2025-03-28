@@ -30,3 +30,18 @@ print(li.index(3))"""
 
 li.insert(3, 10)
 print(li)
+
+li.pop()
+print(li)
+
+li.remove(3)
+print(li)
+
+li.reverse()
+print(li)
+
+li.sort()
+print(li)
+
+li.sort(reverse=True)
+print(li)
