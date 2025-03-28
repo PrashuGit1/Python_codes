@@ -1,11 +1,12 @@
 #list can store any type of data
 
 li=[1,2,3,1,3,1,4,5]
-"""print(li)
+print(li)
 print(li[0], li[-1])
 
 li[2]=9
 print(li)
+
 
 # List Methods
 
@@ -24,7 +25,7 @@ l2=[11,56,23]
 li.extend(l2)
 print(li)
 
-print(li.index(3))"""
+print(li.index(3))
 
 #insert
 
@@ -45,3 +46,7 @@ print(li)
 
 li.sort(reverse=True)
 print(li)
+
+print(li[1:7])
+print(li[1:7:2])
+print(li[-1:7:-1])
