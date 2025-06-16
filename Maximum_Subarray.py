@@ -3,21 +3,18 @@ def max_subarray(nums):
     start = end = s = 0  # For tracking subarray indices
 
     for i in range(1, len(nums)):
-        print(f"\ni={i}, current_sum={current_sum}, max_sum={max_sum}, start={start}, end={end}")
+        #print(f"\ni={i}, current_sum={current_sum}, max_sum={max_sum}, start={start}, end={end}")
         if nums[i] > current_sum + nums[i]:
-            print("Fist if")
             current_sum = nums[i]
             s = i  # potential new start
         else:
-            print("else")
             current_sum += nums[i]
 
         if current_sum > max_sum:
-            print("Second if")
             max_sum = current_sum
             start = s
             end = i
-        print(f"i={i}, current_sum={current_sum}, max_sum={max_sum}, start={start}, end={end}")
+        #print(f"i={i}, current_sum={current_sum}, max_sum={max_sum}, start={start}, end={end}")
     return max_sum, nums[start:end+1]  # Return both sum and subarray
 
 # Test

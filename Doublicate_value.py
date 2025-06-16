@@ -12,3 +12,10 @@ def dublicate_val(lst):
 if __name__ == "__main__":
     lst = [1, 2, 3, 2, 4, 5, 1]
     value=dublicate_val(lst)
+
+
+"""lst = [1, 2, 2, 3, 1, 1]
+dic={}
+for i in lst:
+    dic[i]=dic.get(i,0)+1
+print(dic)"""

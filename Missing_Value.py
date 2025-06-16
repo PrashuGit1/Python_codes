@@ -21,3 +21,27 @@ def find_missing(lst):
 # Driver code
 lst = [5, 6, 10, 11, 13]
 print(find_missing(lst))
+
+
+"""def fun(*lst):
+    lst1=[]
+    last=lst[-1]
+    for i in range(0,last):
+        if i not in lst:
+           lst1.append(i)
+           i+=1
+    print(lst1)
+
+fun(1,2,5,6,8,9)"""
+
+
+"""def fun(*args):
+    lst1=[]
+    last=args[-1]//2
+    for i in range(1,last):
+        if(i*2) not in args:
+            lst1.append(i*2)
+            i+=2
+    print(lst1)
+
+fun(2,4,8,10,14)"""
