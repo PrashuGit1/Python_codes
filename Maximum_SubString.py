@@ -34,3 +34,25 @@ def test_1(string =""):
       
 # Driver code 
 print(test_1("character"))
+
+
+"""def mx_string(txt):
+    mx=''
+    store=''
+    for i in range(0, len(txt)):
+        for j in range(i, len(txt)):
+            if txt[j] not in store:
+                store+=txt[j]
+            else:
+                if(len(store)>len(mx)):
+                    mx=store
+                    store=''
+                    break
+                else:
+                    store=''
+                    break
+                
+                
+    return mx
+
+print(mx_string('character'))"""

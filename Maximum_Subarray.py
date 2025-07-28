@@ -18,7 +18,7 @@ def max_subarray(nums):
     return max_sum, nums[start:end+1]  # Return both sum and subarray
 
 # Test
-nums = [-2,1,-3,4]
+nums = [7,-5,2,-2,5,6,2,-1]
 result = max_subarray(nums)
 print("Max Sum:", result[0])
 print("Subarray:", result[1])
