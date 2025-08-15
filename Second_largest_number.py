@@ -17,8 +17,7 @@ def getSecondLargest(arr):
             return arr[x]"""
 
 
-    mx=-100
-    smx=-100
+    mx=smx=arr[0]
     n=len(arr)
     for i in range(n):
         if(mx<arr[i]):

@@ -1,40 +1,10 @@
-class stack:
-    def __init__(self):
-        self.stack=[]
+import matplotlib.pyplot as plt
 
-    def push(self, data):
-        self.stack.append(data)
+x = [1, 2, 3, 4]
+y = [10, 20, 25, 30]
 
-    def pop(self):
-        if self.isEmpty():
-            return "Stack is Empty"
-        return self.stack.pop()
-    
-    def peek(self):
-        if self.isEmpty():
-            return "Stack is Empty"
-        return self.stack[-1]
-    
-    def isEmpty(self):
-        return len(self.stack)==0
-
-    def size(self):
-        return len(self.stack)
-    
-
-    
-# Create a stack
-myStack = stack()
-
-myStack.push('A')
-myStack.push('B')
-myStack.push('C')
-print("Stack: ", myStack.stack)
-
-print("Pop: ", myStack.pop())
-
-print("Peek: ", myStack.peek())
-
-print("isEmpty: ", myStack.isEmpty())
-
-print("Size: ", myStack.size())
+plt.plot(x, y, marker='o')
+plt.title("Simple Line Chart")
+plt.xlabel("X-axis")
+plt.ylabel("Y-axis")
+plt.show()

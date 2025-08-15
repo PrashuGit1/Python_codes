@@ -18,7 +18,37 @@ def max_subarray(nums):
     return max_sum, nums[start:end+1]  # Return both sum and subarray
 
 # Test
-nums = [7,-5,2,-2,5,6,2,-1]
+# [-2, 1, -3, 2, -1, 4, 1, -5, 4], [7,-5,2,-2,5,6,2,-1]
+nums = [-2, 1, -3, 2, -1, 4, 1, -5, 4]
 result = max_subarray(nums)
 print("Max Sum:", result[0])
 print("Subarray:", result[1])
+
+
+
+# O(n^2)
+
+"""def sub_array(arr):
+    start = end = 0
+    mx = arr[0]
+    n=len(arr)
+    for i in range(n):
+        cumx = 0
+        for j in range(i, n):
+            cumx=cumx+arr[j]
+            if cumx>mx:
+                mx = cumx
+                start = i
+                end = j
+            
+                
+            
+    return arr[start:end+1], mx
+    
+if __name__ == "__main__":
+    arr = [7,-5,2,-2,5,6,2,-1]
+    arr1, mx = sub_array(arr)
+    print(f"Array is : {arr1}")
+    print(f"Max sum is {mx}")
+
+"""
